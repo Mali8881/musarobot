@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    android:background="#E98AFA"
+    tools:context=".vivable.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:background="#3F51B5"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:background="@color/white"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+    <!-- Верхний блок с картинками -->
+    <LinearLayout
+        android:id="@+id/ll_images_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:background="#3F51B5"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/mmus1" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/stormi"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+    <!-- Названия Winx и Trix -->
+
+    <!-- Энергия и сила -->
+
+    <!-- Power -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="288dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Winx"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="Trix"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="344dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power1"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#652EC7"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power2"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#652EC7"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="666dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#652EC7"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storm"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#652EC7"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="555dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="476dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_yellow_fightUp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Fight up !"
+            android:visibility="invisible"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:text="START!"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_red_fightUp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Fight up!"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:layout_marginLeft="22dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="555dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/btn_yellow_fightDown"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Fight down !"
+            android:visibility="invisible"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_red_fightDown"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Fight down!"
+            android:visibility="invisible"
+            android:layout_marginLeft="11dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_game_over"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="616dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="Game over"
+        android:textColor="#993C3C"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_transperent"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:gravity="end"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
